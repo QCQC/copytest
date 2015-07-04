@@ -26,3 +26,8 @@ jean:
     display_name: "Jean Grey"
     role: alum
     bio: "Ph.D., 2013. Now at Microsoft Research."
+    
+david:
+    display_name: "David Desharnais"
+    role: chell player
+    bio: "David Desharnais est une joueur proffesionel de hockey."
