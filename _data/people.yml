@@ -24,7 +24,7 @@ storm:
 
 jean:
     display_name: "Jean Grey"
-    role: alum
+    role: chell
     bio: "Ph.D., 2013. Now at Microsoft Research."
     
 david:
