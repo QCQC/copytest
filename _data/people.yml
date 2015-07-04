@@ -24,10 +24,10 @@ storm:
 
 jean:
     display_name: "Jean Grey"
-    role: chell
+    role: alum
     bio: "Ph.D., 2013. Now at Microsoft Research."
     
 david:
     display_name: "David Desharnais"
-    role: alum
+    role: chell
     bio: "David Desharnais est une joueur proffesionel de hockey."
