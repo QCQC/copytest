@@ -8,7 +8,7 @@ Projects Projects Our research crosses multiple layers of the system stack, from
 ### Project One
 Read about it [here][project].
 
-[project]: ProjectOne/index.html
+[project]: ProjectOne/index.md
 
 ### Approximate Computing
 Improving energy efficiency is paramount in mobile devices and online service infrastructures. Even more importantly, as we approach the limits of silicon device scaling, it might be an enabler for future systems performance and features. Many important applications such as computer vision, machine learning, signal processing, web search, augmented reality, big data analytics, and many more, can inherently tolerate inaccurate computation at various levels. With approximate computing, this fact can be exploited for fundamentally more efficient computing systems.
