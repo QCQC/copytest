@@ -33,7 +33,7 @@ navigation:
     - title: Home
       link: /   
     - title: Projects
-      link: /projects.html
+      link: /projects/
     - title: People
       link: /people.html
     - title: Research
