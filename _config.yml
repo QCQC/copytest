@@ -19,7 +19,6 @@ roles:
     - {key: faculty, name: Faculty}
     - {key: staff, name: Staff}
     - {key: postdoc, name: Researchers}
-    - {key: grad, name: Graduate Students}
     - {key: collab, name: Collaborators}
     - {key: alum, name: Alumni}
 
