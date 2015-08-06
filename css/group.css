@@ -27,7 +27,7 @@ body {
 .footer p {
   margin: 0.1em 0;
 }
-.footer a:link, .footer a:visited {
+.footer a:link, .footer a:visited { 
   color: #8992b8;
 }
 
