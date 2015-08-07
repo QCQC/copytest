@@ -62,6 +62,7 @@ body p{
 .jumbotron {
     padding-top: 18px;
     padding-bottom: 10px;
+    background-color: 000;
 }
 
 /* Group logo */
