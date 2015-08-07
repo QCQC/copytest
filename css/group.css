@@ -58,6 +58,7 @@ body p{
 }
 .jumbotron p {
     font-size: 19px;
+        font-family: "Times New Roman", Georgia, Serif;
 }
 .jumbotron {
     padding-top: 18px;
