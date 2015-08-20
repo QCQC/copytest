@@ -1,25 +1,29 @@
 ---
 layout: default
-title: Software
+title: People
 ---
 
-    <li>
-    <h3>Software One</h3>
-    <p>This is software Number One</p></li>
-    
-    <li>
-    <h3>Software Two</h3>
-    <p>This is software Number Two</p></li>
-    
-       <li>
-    <h3>Software Three</h3>
-    <p>This is software Number Three</p></li>
-    
-       <li>
-    <h3>Software Four</h3>
-    <p>This is software Number Four</p></li>
-    
-       <li>
-    <h3>Software Five</h3>
-    <p>This is software Number Five</p></li>
-
+{% for role in site.roles %}
+  <h3>{{ role.name }}</h3>
+  <dl class="people">
+  {% for item in site.data.people %}
+    {% assign person = item[1] %}
+    {% if person.role == role.key %}
+      <dt class="person">
+        {% if person.webpage %}
+        <a href="{{ person.webpage |escape }}">
+        {% endif %}
+          {{ person.display_name }}
+        {% if person.webpage %}
+        </a>
+        {% endif %}
+      </dt>
+      <dd>
+        {% if person.bio %}
+          {{ person.bio | markdownify }}
+        {% endif %}
+      </dd>
+    {% endif %}
+  {% endfor %}
+  </dl>
+{% endfor %}
