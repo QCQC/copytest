@@ -3,27 +3,9 @@ layout: default
 title: People
 ---
 
-{% for role in site.roles %}
-  <h3>{{ role.name }}</h3>
-  <dl class="people">
-  {% for item in site.data.people %}
+  {% for item in site.data.software %}
     {% assign person = item[1] %}
-    {% if person.role == role.key %}
-      <dt class="person">
-        {% if person.webpage %}
-        <a href="{{ person.webpage |escape }}">
-        {% endif %}
-          {{ person.display_name }}
-        {% if person.webpage %}
-        </a>
-        {% endif %}
-      </dt>
-      <dd>
-        {% if person.bio %}
-          {{ person.bio | markdownify }}
-        {% endif %}
-      </dd>
-    {% endif %}
+  <h2>person.name</h2>
   {% endfor %}
-  </dl>
-{% endfor %}
+
+
