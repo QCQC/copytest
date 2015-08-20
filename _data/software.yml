@@ -1,5 +1,7 @@
 SoftwareOne:
   name: "SoftwareOne"
+  description: "This is a description about software number one."
   
 SoftwareTwo:
   name: "SoftwareTwo"
+  description: "This is a description about software two."
