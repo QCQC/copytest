@@ -4,3 +4,4 @@ SoftwareOne:
   
 SoftwareTwo:
   name: "SoftwareTwo"
+  description: "This is a description about software two."
