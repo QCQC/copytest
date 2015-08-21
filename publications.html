@@ -6,7 +6,7 @@ title: Publications
 
 <ul>
   {% for post in site.data.publications %}
-  {% assign postz = item[1] %}
+  {% assign postz = post[1] %}
   <h1> {{postz.title}}</h1>
     {% unless postz.next %}
       <h3>{{ postz.date | date: '%Y' }}</h3>
