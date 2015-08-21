@@ -6,17 +6,18 @@ title: Publications
 
 <ul>
   {% for post in site.data.publications %}
-  <h1> {{post.title}}</h1>
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
+  {% assign postz = item[1] %}
+  <h1> {{postz.title}}</h1>
+    {% unless postz.next %}
+      <h3>{{ postz.date | date: '%Y' }}</h3>
     {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% capture year %}{{ postz.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ postz.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
+        <h3>{{ postz.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
 
-    <li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li>{{ postz.date | date:"%b" }} <a href="{{ post.url }}">{{ postz.title }}</a></li>
   {% endfor %}
 </ul>
