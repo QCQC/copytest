@@ -6,7 +6,7 @@ title: Publications
 
 <ul>
   {% for post in site.data.publications %}
-
+  <h1> {post.title}</h1>
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
     {% else %}
