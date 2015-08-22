@@ -3,3 +3,7 @@ publicationone:
     date: 2015-11-10
     title: "Publication Title"
       
+publicationtwo:
+    name: "Second Publication"
+    date: 2016-07-04
+    title: "Second Publication"
