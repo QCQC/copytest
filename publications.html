@@ -12,14 +12,12 @@ title: Publications
     <td>
       <span class="date">
       	
-  	{% for post in site.data.publications %}
-  	{% assign currentdate = post.date | date: "%Y" %}
-  	{% if currentdate != date %}
-    	<big><strong>{{ currentdate }}</strong></big><br />
-    	{% assign date = currentdate %} 
-  	{% endif %}
-    
-	{% endfor %}
+  		{% assign currentdate = postz.date | date: "%Y" %}
+  		{% if currentdate != date %}
+    			<big><strong>{{ currentdate }}</strong></big><br />
+    		{% assign date = currentdate %} 
+  		{% endif %}
+  		{{ postz.date | date: "%B" }}  
   		
   						
     {% endunless %}
