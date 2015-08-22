@@ -6,14 +6,13 @@ publicationtwo:
     venue: "Utrecht ASOT 650"
     link: "www.google.com"
 
-
 publicationthree:
     name: "Third Publication"
     date: 2015-12-10
     title: "Publication Title"
     authors: "Armin Van Buuren, Sean Tyas, Markus Schulz, Ferry Corsten, and Orjan Nilsen."
     venue: "Utrecht ASOT 650"
-     link: "www.google.com"
+    link: "www.google.com"
 
 publicationone:
     name: "First Publication"
@@ -21,4 +20,4 @@ publicationone:
     title: "Publication Title"
     authors: "Armin Van Buuren, Sean Tyas, Markus Schulz, Ferry Corsten, and Orjan Nilsen."
     venue: "Utrecht ASOT 650"
-     link: "www.google.com"
+    link: "www.google.com"
