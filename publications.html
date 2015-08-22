@@ -8,11 +8,23 @@ title: Publications
   {% for post in site.data.publications %}
   {% assign postz = post[1] %}
     {% unless postz.next %}
+    
+    {% for post in site.posts %}
+    
+    
+
+    
+    
     <tr>
     
     <td>
       <span class="date">
-				<big><strong>{{ postz.date | date: '%Y' }}</strong></big><br />
+      				  {% assign currentdate = postz.date | date: "%Y" %}
+				  {% if currentdate != date %}
+					<big><strong>{{ postz.date | date: '%Y' }}</strong></big><br />
+    				{% assign date = currentdate %} 
+  				{% endif %}
+				
 				 {{ postz.date | date: "%B" }}
 
     {% else %}
