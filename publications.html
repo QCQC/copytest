@@ -11,7 +11,7 @@ title: Publications
     <td>
       <span class="date">
 				<big><strong>{{ postz.date | date: '%Y' }}</strong></big><br />
-				July
+				 {{ postz.date | date: "%B" }}
 
     {% else %}
       {% capture year %}{{ postz.date | date: '%Y' }}{% endcapture %}
