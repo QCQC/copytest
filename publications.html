@@ -9,15 +9,21 @@ title: Publications
   {% assign postz = post[1] %}
   <h1> {{postz.title}}</h1>
     {% unless postz.next %}
-      <h3>{{ postz.date | date: '%Y' }}</h3>
+    <td>
+      <span class="date">
+				<big><strong>{{ postz.date | date: '%Y' }}</strong></big><br />
+				July
+
     {% else %}
       {% capture year %}{{ postz.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ postz.next.date | date: '%Y' }}{% endcapture %}
+      
       {% if year != nyear %}
         <h3>{{ postz.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
-
+			</span>
+    </td>
     <li>{{ postz.date | date:"%b" }} <a href="{{ post.url }}">{{ postz.title }}</a></li>
   {% endfor %}
 </ul>
