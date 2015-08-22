@@ -19,12 +19,8 @@ title: Publications
     
     <td>
       <span class="date">
-      				  {% assign currentdate = postz.date | date: "%Y" %}
-				  {% if currentdate != date %}
+      				  
 					<big><strong>{{ postz.date | date: '%Y' }}</strong></big><br />
-    				{% assign date = currentdate %} 
-  				{% endif %}
-				
 				 {{ postz.date | date: "%B" }}
 
     {% else %}
