@@ -4,10 +4,11 @@ title: Publications
 ---
 <table class="table">
 <tbody>
-    <tr>
+
   {% for post in site.data.publications %}
   {% assign postz = post[1] %}
     {% unless postz.next %}
+        <tr>
     <td>
       <span class="date">
 				<big><strong>{{ postz.date | date: '%Y' }}</strong></big><br />
